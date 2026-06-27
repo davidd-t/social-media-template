@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StellarGrowth | Professional Social Media Marketing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .parallax-target {
+            transition: transform 0.1s ease-out;
+        }
+        .glass-card {
+            background: rgba(26, 36, 56, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(125, 211, 252, 0.1);
+        }
+        .glass-nav {
+            background: rgba(10, 14, 26, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#c8a0f0",
+                        "on-surface-variant": "#a0b4c4",
+                        "secondary-fixed-dim": "#88b4cc",
+                        "on-surface": "#e0e8f0",
+                        "secondary": "#88b4cc",
+                        "on-error-container": "#ffb3b3",
+                        "primary-container": "#0e4d6e",
+                        "primary-fixed": "#c8eaff",
+                        "tertiary-container": "#3d2060",
+                        "on-background": "#e0e8f0",
+                        "surface-container-high": "#1a2438",
+                        "tertiary-fixed-dim": "#c8a0f0",
+                        "surface-tint": "#7dd3fc",
+                        "on-secondary-fixed": "#0d1f2b",
+                        "error": "#ff6b6b",
+                        "surface-variant": "#1a2438",
+                        "secondary-fixed": "#c0d8e8",
+                        "on-tertiary-container": "#e8d0ff",
+                        "tertiary-fixed": "#e8d0ff",
+                        "primary-fixed-dim": "#7dd3fc",
+                        "error-container": "#3d1414",
+                        "surface-container-highest": "#202c42",
+                        "surface-bright": "#1a2438",
+                        "on-secondary": "#001f2e",
+                        "outline": "#4a6070",
+                        "secondary-container": "#1a3a4e",
+                        "on-primary": "#001f2e",
+                        "on-primary-fixed": "#001f2e",
+                        "inverse-primary": "#0a4c6e",
+                        "inverse-on-surface": "#0a0e1a",
+                        "on-tertiary-fixed": "#1a002e",
+                        "primary": "#7dd3fc",
+                        "surface-dim": "#0f1524",
+                        "on-primary-container": "#c8eaff",
+                        "on-secondary-fixed-variant": "#2a4a5e",
+                        "on-tertiary-fixed-variant": "#4d2a73",
+                        "on-tertiary": "#1a002e",
+                        "on-error": "#1a0000",
+                        "inverse-surface": "#e0e8f0",
+                        "outline-variant": "#2a3a48",
+                        "background": "#0a0e1a",
+                        "surface-container-lowest": "#0a0e1a",
+                        "surface-container": "#141c2e",
+                        "on-secondary-container": "#c0d8e8",
+                        "on-primary-fixed-variant": "#004d73",
+                        "surface": "#0f1524",
+                        "surface-container-low": "#111828"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.75rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "margin-mobile": "24px",
+                        "section-gap": "120px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "headline": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body overflow-x-hidden">
+<!-- Navigation -->
+<nav class="glass-nav fixed top-0 w-full border-b border-outline-variant z-50">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display text-2xl font-bold text-primary cursor-pointer active:opacity-80">
+                StellarGrowth
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer" href="#services">Services</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer" href="#about">About</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer" href="#testimonials">Testimonials</a>
+<a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-all active:scale-95 shadow-[0_0_20px_rgba(125,211,252,0.3)]">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+<!-- Background Shader from SCREEN_3 -->
+<div class="absolute inset-0 w-full h-full bg-black">
+<canvas class="block w-full h-full" id="shader-canvas-ANIMATION_3"></canvas>
+<script>
+            (function() {
+              const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+              function syncSize() {
+                const w = canvas.clientWidth || window.innerWidth;
+                const h = canvas.clientHeight || window.innerHeight;
+                if (canvas.width !== w || canvas.height !== h) {
+                  canvas.width  = w;
+                  canvas.height = h;
+                }
+              }
+              if (typeof ResizeObserver !== 'undefined') {
+                new ResizeObserver(syncSize).observe(canvas);
+              }
+              syncSize();
+
+              const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+              if (!gl) return;
+              const vs = `attribute vec2 a_position;
+            varying vec2 v_texCoord;
+            void main() {
+              v_texCoord = a_position * 0.5 + 0.5;
+              gl_Position = vec4(a_position, 0.0, 1.0);
+            }`;
+              const fs = `precision highp float;
+            varying vec2 v_texCoord;
+            uniform float u_time;
+            uniform vec2 u_resolution;
+
+            void main() {
+                vec2 uv = v_texCoord;
+                float wave1 = sin(uv.x * 2.0 + u_time * 0.5) * 0.5 + 0.5;
+                float wave2 = sin(uv.y * 3.0 - u_time * 0.3) * 0.5 + 0.5;
+                vec3 color1 = vec3(0.04, 0.05, 0.1); 
+                vec3 color2 = vec3(0.49, 0.82, 0.98); 
+                float mixFactor = (wave1 + wave2) * 0.5;
+                mixFactor = smoothstep(0.3, 0.7, mixFactor);
+                vec3 finalColor = mix(color1, color2 * 0.3, mixFactor);
+                float dist = distance(uv, vec2(0.5));
+                finalColor *= 1.0 - dist * 0.5;
+                gl_FragColor = vec4(finalColor, 1.0);
+            }`;
+              function cs(type, src) {
+                const s = gl.createShader(type);
+                gl.shaderSource(s, src);
+                gl.compileShader(s);
+                return s;
+              }
+              const prog = gl.createProgram();
+              gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+              gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+              gl.linkProgram(prog);
+              gl.useProgram(prog);
+              const buf = gl.createBuffer();
+              gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+              gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+              const pos = gl.getAttribLocation(prog, 'a_position');
+              gl.enableVertexAttribArray(pos);
+              gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+              const uTime = gl.getUniformLocation(prog, 'u_time');
+              const uRes = gl.getUniformLocation(prog, 'u_resolution');
+
+              function render(t) {
+                gl.viewport(0, 0, canvas.width, canvas.height);
+                if (uTime) gl.uniform1f(uTime, t * 0.001);
+                if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                requestAnimationFrame(render);
+              }
+              render(0);
+            })();
+            </script>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center parallax-target" id="hero-content">
+<span class="inline-block text-xs font-bold text-primary mb-6 tracking-[0.3em] uppercase animate-fade-in-up">PRECISION MARKETING</span>
+<h1 class="font-display text-4xl md:text-7xl font-extrabold text-on-surface mb-8 animate-fade-in-up leading-tight" style="animation-delay: 0.1s">
+                Elevate Your Digital Presence
+            </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 opacity-90 animate-fade-in-up" style="animation-delay: 0.2s">
+                We blend high-performance data analytics with creative edge to scale your brand across social ecosystems. Experience ROI-driven growth designed for the modern era.
+            </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center animate-fade-in-up" style="animation-delay: 0.3s">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-semibold text-lg hover:opacity-90 transition-all shadow-[0_0_30px_rgba(125,211,252,0.2)]">
+                    Get a Free Audit
+                </button>
+<button class="border border-outline text-on-surface px-10 py-5 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all backdrop-blur-sm">
+                    View Our Results
+                </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="animate-fade-in-up">
+<span class="text-xs font-bold text-primary mb-4 block tracking-widest uppercase">OUR PHILOSOPHY</span>
+<h2 class="font-display text-4xl font-bold text-on-surface mb-8">Strategic Growth, Scaled</h2>
+<div class="space-y-6 text-on-surface-variant text-lg">
+<p>At StellarGrowth, we reject the noise of traditional "hustle" marketing. We believe in kinetic precision—leveraging sophisticated algorithms and behavioral psychology to place your brand where it matters most.</p>
+<p>Our methodology is rooted in rigorous testing and real-time optimization. We don't just chase vanity metrics; we build sustainable digital equity for premium brands.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6 animate-fade-in-up" style="animation-delay: 0.2s">
+<div class="glass-card p-8 rounded-lg shadow-sm hover:border-primary/30 transition-all duration-300">
+<div class="font-display text-4xl font-extrabold text-primary mb-2">500%</div>
+<div class="text-xs font-bold text-on-surface-variant opacity-70 tracking-widest uppercase">Average ROI</div>
+</div>
+<div class="glass-card p-8 rounded-lg shadow-sm hover:border-primary/30 transition-all duration-300">
+<div class="font-display text-4xl font-extrabold text-primary mb-2">50M+</div>
+<div class="text-xs font-bold text-on-surface-variant opacity-70 tracking-widest uppercase">Monthly Reach</div>
+</div>
+<div class="glass-card p-8 rounded-lg shadow-sm hover:border-primary/30 transition-all duration-300">
+<div class="font-display text-4xl font-extrabold text-primary mb-2">120+</div>
+<div class="text-xs font-bold text-on-surface-variant opacity-70 tracking-widest uppercase">Global Brands</div>
+</div>
+<div class="glass-card p-8 rounded-lg shadow-sm hover:border-primary/30 transition-all duration-300">
+<div class="font-display text-4xl font-extrabold text-primary mb-2">24/7</div>
+<div class="text-xs font-bold text-on-surface-variant opacity-70 tracking-widest uppercase">Data Monitoring</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap bg-surface-container-low/50" id="testimonials">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 animate-fade-in-up">
+<span class="text-xs font-bold text-primary mb-4 block tracking-widest uppercase">CLIENT SUCCESS</span>
+<h2 class="font-display text-4xl font-bold text-on-surface">Trusted by Industry Leaders</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="glass-card p-8 rounded-lg animate-fade-in-up flex flex-col justify-between" style="animation-delay: 0.1s">
+<p class="text-lg italic text-on-surface-variant mb-8">"StellarGrowth transformed our digital footprint within 90 days. Their analytical approach to creative testing is unlike anything we've seen from other agencies."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary/20" data-alt="Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuDlWo85KJDiOej56bWcnvfjrF6hpy9pBQux_kN_j0TGQPh9qG1DYuE1ZqHPC57_noJd6DZThtxpdq-ts9HxIWNRLHy17DJEByf4Etv84-nyxVzsB0DH5JOwekFrFjvDQJ2jtJ0OhJtpp-6uUajdhUBsd4qIHKZxD9HOLb6jTE9tn9zY-kHE8EezNff35kVPTDwbiZUj7QbdmkgIAaBGHGiWSmL4jgVOoqSWtqjZjFIUyVD20_sh1V6Q"/>
+<div>
+<div class="font-bold text-on-surface">Marcus Thorne</div>
+<div class="text-sm text-primary">CEO, NeuraLink Systems</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-8 rounded-lg animate-fade-in-up flex flex-col justify-between" style="animation-delay: 0.2s">
+<p class="text-lg italic text-on-surface-variant mb-8">"The level of strategic insight they provided for our retail launch was exceptional. We hit our year-one targets in just four months of partnership."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary/20" data-alt="Elena Rodriguez" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSSEanZNGp1MW-7KhJ6Oc_RZEMWUI2QnjmaNDdhPhmazl6fZWiPuJgO-ccvVu_HolhcFLV3LEnQBuA2SCgmQsGh2ZDHt-sSyHWNH-jvMY5Tqn1whN6-GALnCbKGiQWsZaQ1lBkdtXncrNJkQOBBt4Gz5gqbEoNTTZ1oKAjQxbni0PW90BhSecIxJAX2EKY0o06VPpAwQq8hL1pDAyb7Vt3fXpzd6Rr0ZGE3dCUHYkFdBBupOwf2tsZpQ"/>
+<div>
+<div class="font-bold text-on-surface">Elena Rodriguez</div>
+<div class="text-sm text-primary">Founder, Lusso Retail</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card p-8 rounded-lg animate-fade-in-up flex flex-col justify-between" style="animation-delay: 0.3s">
+<p class="text-lg italic text-on-surface-variant mb-8">"StellarGrowth doesn't just manage accounts; they engineer market dominance. Their data visualization tools give us total transparency over our spend."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary/20" data-alt="Julian Vane" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXmzGCtspVcQ4M5P0Ktcrgh1amp9Ozkv3F1k6bC_qvI_vFiUPfUsOi_J0Z37tg--w76seZMq7EznOWx9IVY2-TYdaNjH6MC_7RJ7Fw4cyoHRC5VAhlB4GNhyT3WWN1u9eOFq5VZMMce8PyJ3JKheFPLOGt1N5zQITwHXzbsskkf0pRqnHHec5vjA730y7Wt7YeZfxBzxaPrUzHzPdoI42x_VNVFBJi4aJGIRtmIR8f-pvmnAwY3jFhLg"/>
+<div>
+<div class="font-bold text-on-surface">Julian Vane</div>
+<div class="text-sm text-primary">CTO, Vertex AI</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="animate-fade-in-up">
+<h2 class="font-display text-4xl font-bold text-on-surface mb-6">Let's Design Your Growth</h2>
+<p class="text-lg text-on-surface-variant mb-12">Ready to move beyond basic social media? Contact us for a strategic audit of your current digital presence.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<div class="font-bold text-on-surface">Headquarters</div>
+<div class="text-on-surface-variant">1200 Avenue of the Americas<br/>New York, NY 10036</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<div>
+<div class="font-bold text-on-surface">Email Us</div>
+<div class="text-on-surface-variant">growth@stellargrowth.agency</div>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-8 md:p-12 rounded-lg animate-fade-in-up shadow-xl" style="animation-delay: 0.2s">
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 tracking-widest uppercase">FULL NAME</label>
+<input class="w-full bg-white/5 border border-outline-variant focus:border-primary transition-all py-3 px-4 rounded-lg outline-none text-on-surface" placeholder="Enter your name" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 tracking-widest uppercase">WORK EMAIL</label>
+<input class="w-full bg-white/5 border border-outline-variant focus:border-primary transition-all py-3 px-4 rounded-lg outline-none text-on-surface" placeholder="name@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 tracking-widest uppercase">MESSAGE</label>
+<textarea class="w-full bg-white/5 border border-outline-variant focus:border-primary transition-all py-3 px-4 rounded-lg outline-none text-on-surface resize-none" placeholder="Tell us about your brand goals" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(125,211,252,0.2)]">
+                        Submit Inquiry
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-surface-variant">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display text-2xl font-bold text-primary mb-6">StellarGrowth</div>
+<p class="opacity-70 leading-relaxed">Elevating brands through precision digital engineering and creative rigor.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-bold text-on-surface mb-2">Agency</div>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Services</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">About Us</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Testimonials</a>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-bold text-on-surface mb-2">Legal</div>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-bold text-on-surface mb-2">Connect</div>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors cursor-pointer" href="#">Instagram</a>
+</div>
+</div>
+<div class="border-t border-outline-variant border-opacity-20 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant opacity-50 text-sm">
+<div>© 2024 StellarGrowth Agency. All rights reserved.</div>
+<div class="flex gap-6">
+<span>Designed for Excellence</span>
+<span>/</span>
+<span>Powered by Data</span>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle Parallax Effect for Hero Content
+        document.addEventListener('mousemove', (e) => {
+            const heroContent = document.getElementById('hero-content');
+            if (heroContent) {
+                const x = (window.innerWidth / 2 - e.pageX) / 40;
+                const y = (window.innerHeight / 2 - e.pageY) / 40;
+                heroContent.style.transform = `translate(${x}px, ${y}px)`;
+            }
+        });
+
+        // Simple Fade-In on Scroll Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            if (!el.classList.contains('animate-fade-in-up')) {
+                observer.observe(el);
+            }
+        });
+    </script>
+</body></html>
